@@ -1,0 +1,7 @@
+   numpy>=1.26
+   pandas>=2.1
+   pyarrow>=14
+   matplotlib>=3.8
+   statsmodels>=0.14
+   scipy>=1.11
+   ipykernel>=6.25
