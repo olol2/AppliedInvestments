@@ -1,0 +1,110 @@
+DATA NOTES - Applied Investments project (robust momentum)
+Last updated: 3 November 2026
+
+=====================================================================
+1. DATA CHECK: WHAT WE HAVE (all OK)
+=====================================================================
+
+Checked with check_data.sh on all 14 files in data/.
+
+- Monthly.csv (CRSP, CIZ format): Jan 1959 to Dec 2025, 4.96 million rows,
+  40,056 stocks, of which 29,300 stop before Dec 2025.
+  -> dead firms are included, so no survivorship bias.
+- Returns include dividends and splits: Apple Aug 2020 = +21.7% despite
+  the 4:1 split (price 425 -> 129).
+- Delisting returns are already included in MthRet (CIZ format).
+- Daily files (CRSP): continuous from 31 Dec 1959 to 31 Dec 2025, about
+  102 million rows, no gaps between the 5 files.
+- Kenneth French files (FF3, FF5, UMD, ME breakpoints, momentum
+  breakpoints, 10 momentum portfolios): all present, Sep 2026 vintage.
+- q5 factors: Jan 1967 to Dec 2025 (note: start in 1967, not 1963).
+- NBER recessions (USREC): Jan 1960 to Oct 2026.
+
+Out-of-sample period is therefore 2012-2025 (14 years).
+
+To handle in the code (no action needed from anyone):
+- Duplicate rows exist (e.g. Apple Aug 2020 appears twice). We drop
+  exact duplicates and check one row per stock-month.
+- Units: CRSP returns are decimals; French and q5 are in percent.
+  Everything is converted to decimals when loaded.
+- Universe filters (common stock, exchange, price > $5) are applied at
+  formation date t, NOT on the holding month t+1. Otherwise the
+  delisting-month row is dropped and survivorship bias comes back.
+
+=====================================================================
+2. WHAT IS MISSING: STOCK-LEVEL SPREAD DATA
+=====================================================================
+
+The daily files only contain: PERMNO, HdrCUSIP, Ticker, PERMCO,
+DlyCalDt, DlyPrc, DlyRet.
+
+Missing for the full transaction cost model of lecture 3:
+- bid/ask quotes, or
+- daily low/high prices (needed for the Corwin-Schultz spread estimator).
+
+What is NOT a problem:
+- Daily volume is missing, but monthly volume (MthVol) / trading days
+  gives average daily volume, which is enough for price impact.
+- Everything up to Part 3 of the notebook (data, universe, baseline
+  momentum, check vs UMD) can be done now. The cost choice only matters
+  from Part 4 onwards.
+
+=====================================================================
+3. OPTIONS - GROUP DECISION NEEDED
+=====================================================================
+
+OPTION A - Fixed costs only (10 / 25 / 50 bp per unit of turnover)
+  This was the original choice in v2.
+  + No new data, simplest to code and explain
+  + Standard in the literature, easy sensitivity table
+  - Same cost for every stock and every period: ignores that losers are
+    smaller and less liquid, and that costs spike in crises (2009),
+    which is exactly when our short-leg rule is active
+  - Does not follow the cost model taught in lecture 3; Goyal may ask why
+
+OPTION B - Approximate model without new data
+  Size-dependent spread (by size bucket) + price impact from lecture 3
+  computed with MthVol + break-even cost + 10/25/50 bp as sensitivity.
+  + No new data, can start now
+  + Follows the logic of lecture 3 (spread + price impact, lambda by size)
+  + Captures the main issue: small/illiquid stocks cost more
+  + Break-even cost (cost at which alpha = 0) is a strong, simple
+    argument for the committee whatever the exact cost model
+  - Spreads are approximated by size bucket, not measured stock by stock
+    (to be stated as a limitation in the report)
+  - Slightly more coding than A
+
+OPTION C - Re-download the monthly file with CRSP bid/ask added
+  + Small file, quick to re-extract from WRDS
+  + Closest to what Goyal does in lecture 3 (quotes where available,
+    gaps filled with size-bucket means)
+  - CRSP quotes are sparse before the 1990s (Goyal says so in lecture 3),
+    so most of the in-sample period 1963-2011 would still be filled with
+    size-bucket averages, i.e. close to option B in practice
+  - Someone needs WRDS access and time this week; exact CIZ column names
+    to check on WRDS
+
+OPTION D - Re-download the 5 daily files with daily low/high (+ volume)
+  + Stock-level spreads for the whole sample via Corwin-Schultz (2012)
+  + Most precise and most "research-grade" option
+  - Files become even bigger than the current ~6 GB; long download and
+    slower processing
+  - Extra coding (Corwin-Schultz estimator) in a tight timeline
+  - Gain over B is probably small, since we already exclude micro-caps,
+    where most of the cost differences are
+
+=====================================================================
+4. SUGGESTION
+=====================================================================
+
+Option B, plus option C only if someone can re-extract the monthly file
+quickly this week. Option D is probably not worth the time given the
+deadline. Whatever we choose, the cost model must be fixed before the
+design freeze (Part 9 of the notebook) and applied to every row of every
+table.
+
+Questions to settle as a group:
+1. Which option (A / B / C / D)?
+2. If B or C: which assumed fund size for price impact (e.g. USD 100m)?
+3. Deadline: 10 or 13 November? (syllabus says "Wednesday 10 November",
+   but 10 November 2026 is a Tuesday - to confirm with Prof. Goyal)

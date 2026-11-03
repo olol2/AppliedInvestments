@@ -1,0 +1,91 @@
+== MONTHLY RANGE ==
+Monthly: 1959-01-30 to 2025-12-31 | 4961319 rows | 40056 PERMNOs | 29300 stop before Dec 2025
+
+== APPLE SPLIT CHECK (Jul-Sep 2020) ==
+14593,03783310,Q,Y,EQTY,COM,NS,AAPL,7,2020-07-31,425.040000,0.165132,0.165132,754302265,4275634
+14593,03783310,Q,Y,EQTY,COM,NS,AAPL,7,2020-08-31,129.040000,0.216620,0.214380,1184423167,17102536
+14593,03783310,Q,Y,EQTY,COM,NS,AAPL,7,2020-08-31,129.040000,0.216620,0.214380,1184423167,17102536
+14593,03783310,Q,Y,EQTY,COM,NS,AAPL,7,2020-09-30,115.810000,-0.102526,-0.102526,3881627383,16976763
+
+== DAILY FILES ==
+1959.12.31_1964.12.31.csv : 1959-12-31 to 1964-12-31 | 2025926 rows
+1965.01.01_1980.01.01.csv : 1965-01-04 to 1979-12-31 | 14016873 rows
+1980.01.02_1995.01.02.csv : 1980-01-02 to 1994-12-30 | 25007010 rows
+1995.01.03_2010.01.03.csv : 1995-01-03 to 2009-12-31 | 29361458 rows
+2010.01.04_2025.12.31.csv : 2010-01-04 to 2025-12-31 | 31681380 rows
+
+== OTHER FILES ==
+--- F-F_Momentum_Factor.csv
+This file was created using the 202609 CRSP database.  It
+contains a momentum factor, constructed from six value-weight portfolios formed
+using independent sorts on size and prior return of NYSE, AMEX, and NASDAQ stocks
+Mom    is the average of the returns on two (big and small) high prior return portfolios
+minus the average of the returns on two low prior return portfolios.  The portfolios
+are constructed monthly.  Big means a firm is above the median market cap on the NYSE
+(last line)
+Copyright 2026 Eugene F. Fama and Kenneth R. French
+--- F-F_Research_Data_5_Factors_2x3.csv
+This file was created using the 202609 CRSP database.
+The 1-month TBill rate data until 202405 are from Ibbotson Associates. Starting from 202406, the 1-month TBill rate is from ICE BofA US 1-Month Treasu
+The annual TBill return is compounded from the monthly T-bill rates from January to December. 
+
+,Mkt-RF,SMB,HML,RMW,CMA,RF
+196307,   -0.39,   -0.48,   -0.84,    0.64,   -1.15,    0.27
+(last line)
+Copyright 2026 Eugene F. Fama and Kenneth R. French
+--- F-F_Research_Data_Factors.csv
+This file was created using the 202609 CRSP database.
+The 1-month TBill rate data until 202405 are from Ibbotson Associates. Starting from 202406, the 1-month TBill rate is from ICE BofA US 1-Month Treasu
+The annual TBill return is compounded from the monthly T-bill rates from January to December. 
+
+,Mkt-RF,SMB,HML,RF
+192607,   2.89,  -2.42,  -2.75,   0.22
+(last line)
+Copyright 2026 Eugene F. Fama and Kenneth R. French
+--- ME_Breakpoints.csv
+This file was created using the 202609 CRSP database.  It contains every 5th NYSE ME percentile (divided by 1000000).
+
+192512,   488,        1.40,        2.38,        3.37,        4.96,        5.95,        7.40,        8.92,       10.81,       13.01,       15.56,      
+192601,   492,        1.38,        2.54,        3.76,        4.84,        5.94,        7.50,        9.28,       10.94,       12.69,       15.81,      
+192602,   500,        1.29,        2.34,        3.57,        4.69,        5.61,        7.15,        8.45,       10.41,       12.06,       14.62,      
+192603,   503,        1.14,        2.10,        3.08,        4.20,        5.06,        6.04,        7.44,        9.00,       10.68,       13.20,      
+(last line)
+Copyright 2026 Eugene F. Fama and Kenneth R. French
+--- Prior_2-12_Breakpoints.csv
+This file was created using the 202609 CRSP database.  It contains every fifth NYSE prior return percentile for each month.
+ The prior returns are for 12 months. 
+1 month is skipped at the end of the prior period.
+
+192612,   472,      -54.00,      -45.52,      -36.51,      -30.54,      -23.42,      -17.77,      -14.62,       -9.95,       -5.95,       -3.00,      
+192701,   476,      -57.14,      -45.00,      -34.00,      -29.32,      -21.90,      -17.14,      -13.08,       -9.77,       -5.59,       -1.47,      
+(last line)
+Copyright 2026 Eugene F. Fama and Kenneth R. French
+--- 10_Portfolios_Prior_12_2.csv
+This file was created using the 202609 CRSP database.
+It contains value- and equal-weighted returns for  10 prior-return portfolios.
+The portfolios are constructed monthly. PRIOR_RET is from -12 to - 2.
+
+Annual returns are from January to December.
+
+(last line)
+Copyright 2026 Eugene F. Fama and Kenneth R. French
+--- q5_factors_monthly_2025.csv
+year,month,R_F,R_MKT,R_ME,R_IA,R_ROE,R_EG
+1967,1,0.3927,8.1879,6.8076,-2.9213,1.8882,-2.5547
+1967,2,0.3743,0.7501,1.6269,-0.2950,3.5538,2.1825
+1967,3,0.3693,4.0187,1.9875,-1.6769,1.8413,-1.1191
+1967,4,0.3344,3.8808,-0.6677,-2.8961,1.0300,-1.6378
+1967,5,0.3126,-4.2980,2.7533,2.1806,0.6005,0.1188
+(last line)
+2025,12,0.3127,-0.3337,0.0065,0.7384,0.0127,0.5577
+--- USREC.csv
+observation_date,USREC
+1960-01-01,0
+1960-02-01,0
+1960-03-01,0
+1960-04-01,0
+1960-05-01,1
+(last line)
+2026-10-01,0
+
+== DONE ==
