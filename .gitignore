@@ -1,0 +1,27 @@
+# ---- Data: never pushed (size limits + CRSP/WRDS licence) ----
+data/
+Applied Data/
+zip files/
+*.zip
+*.csv
+*.parquet
+*.feather
+*.pkl
+*.h5
+# Allow small result tables we export ourselves
+!output/**/*.csv
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- Python ----
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# ---- macOS / editors ----
+.DS_Store
+.vscode/
+.idea/
