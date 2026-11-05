@@ -1,0 +1,13 @@
+,,Months,Mean (% p.a.),Sharpe,Worst month (%),Share of positive months (%)
+Recession,A = B: 12-1 momentum,85,-2.9359,-0.0799,-42.3903,55.2941
+Recession,A + buffer (reference),85,-1.3786,-0.0419,-38.833,52.9412
+Recession,C: + swap rule,85,-3.5311,-0.138,-26.3111,57.6471
+Recession,D: + swap rule + buffer (final),85,-1.8138,-0.0781,-24.3502,57.6471
+Recession,E: permanent swap (competitor),85,-3.2054,-0.158,-24.3502,57.6471
+Recession,US market (excess return),85,-7.368,-0.3121,-17.2,45.8824
+Expansion,A = B: 12-1 momentum,665,2.5938,0.1176,-35.8345,54.1353
+Expansion,A + buffer (reference),665,6.1637,0.2962,-32.4574,57.4436
+Expansion,C: + swap rule,665,3.284,0.162,-29.3935,54.2857
+Expansion,D: + swap rule + buffer (final),665,6.7092,0.3544,-30.0163,57.4436
+Expansion,E: permanent swap (competitor),665,5.0382,0.3467,-20.4414,57.7444
+Expansion,US market (excess return),665,8.9856,0.6416,-23.19,61.8045
