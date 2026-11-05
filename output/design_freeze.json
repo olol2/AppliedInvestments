@@ -1,0 +1,130 @@
+{
+  "frozen_on": "2026-11-05 16:46",
+  "mandate": "100% long / 100% short, US common stocks only, no cash",
+  "sample": {
+    "in_sample": [
+      "1963-07-31",
+      "2011-12-31"
+    ],
+    "out_of_sample": [
+      "2012-01-31",
+      "2025-12-31"
+    ]
+  },
+  "universe": {
+    "min_price": 5.0,
+    "size_percentile_nyse": 20,
+    "exchanges": [
+      "N",
+      "A",
+      "Q"
+    ]
+  },
+  "signal": {
+    "selected": "mom_12_1",
+    "min_obs": 8,
+    "portfolios": 10
+  },
+  "rule": {
+    "type": "swap of the short leg to the market leg",
+    "delta": 0.5,
+    "bear_window_months": 24,
+    "high_vol": "loser volatility above expanding median (min 12 months)"
+  },
+  "buffer": {
+    "long": [
+      10,
+      9
+    ],
+    "short": [
+      1,
+      2
+    ]
+  },
+  "competitor": {
+    "row_E": "permanent swap, delta = 0.5",
+    "moreira_muir_leverage_cap": 2.0
+  },
+  "costs": {
+    "model": "option B",
+    "half_spread": {
+      "micro": 0.011881,
+      "small": 0.007921,
+      "large": 0.00396
+    },
+    "lambda": {
+      "micro": 2.5,
+      "small": 1.5,
+      "large": 1.0
+    },
+    "max_participation": 0.1,
+    "fund_usd_2025": 100000000.0,
+    "fixed_bp_sensitivity": [
+      10,
+      25,
+      50
+    ]
+  },
+  "evaluation": {
+    "main_model": "FF5 + UMD",
+    "newey_west_lags": 6,
+    "t_threshold": 3.0
+  },
+  "in_sample_results": {
+    "A: 12-1 momentum": {
+      "Gross mean (% p.a.)": 16.647,
+      "Vol (% p.a.)": 23.4396,
+      "Gross Sharpe": 0.7102,
+      "Net Sharpe": 0.1634,
+      "Max drawdown (%)": -71.5061,
+      "Worst month (%)": -41.0553,
+      "Skewness": -0.9356,
+      "Turnover (% per month)": 149.9438,
+      "Cost (% per month)": 1.0694
+    },
+    "A + buffer": {
+      "Gross mean (% p.a.)": 14.242,
+      "Vol (% p.a.)": 21.4334,
+      "Gross Sharpe": 0.6645,
+      "Net Sharpe": 0.3687,
+      "Max drawdown (%)": -70.7641,
+      "Worst month (%)": -37.905,
+      "Skewness": -0.9731,
+      "Turnover (% per month)": 82.7984,
+      "Cost (% per month)": 0.5292
+    },
+    "C: + swap rule": {
+      "Gross mean (% p.a.)": 16.139,
+      "Vol (% p.a.)": 19.8669,
+      "Gross Sharpe": 0.8124,
+      "Net Sharpe": 0.2061,
+      "Max drawdown (%)": -51.6649,
+      "Worst month (%)": -25.567,
+      "Skewness": -0.4091,
+      "Turnover (% per month)": 145.1188,
+      "Cost (% per month)": 1.0064
+    },
+    "D: final strategy": {
+      "Gross mean (% p.a.)": 14.0741,
+      "Vol (% p.a.)": 18.1323,
+      "Gross Sharpe": 0.7762,
+      "Net Sharpe": 0.4361,
+      "Max drawdown (%)": -51.2475,
+      "Worst month (%)": -23.8389,
+      "Skewness": -0.4306,
+      "Turnover (% per month)": 83.1692,
+      "Cost (% per month)": 0.5176
+    },
+    "E: permanent swap": {
+      "Gross mean (% p.a.)": 10.1866,
+      "Vol (% p.a.)": 14.9695,
+      "Gross Sharpe": 0.6805,
+      "Net Sharpe": 0.3964,
+      "Max drawdown (%)": -49.7734,
+      "Worst month (%)": -23.8389,
+      "Skewness": -0.6696,
+      "Turnover (% per month)": 61.1136,
+      "Cost (% per month)": 0.3552
+    }
+  }
+}
