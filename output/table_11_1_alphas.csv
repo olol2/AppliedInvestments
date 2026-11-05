@@ -1,0 +1,121 @@
+Period,Strategy,Returns,Model,Alpha (% per month),t-stat,Months
+In-sample 1963-2011,A = B: 12-1 momentum,gross,CAPM,1.4973,5.5491,582
+In-sample 1963-2011,A = B: 12-1 momentum,gross,FF3,1.7002,6.521,582
+In-sample 1963-2011,A = B: 12-1 momentum,gross,Carhart,0.405,2.6189,582
+In-sample 1963-2011,A = B: 12-1 momentum,gross,FF5,1.4483,3.9196,582
+In-sample 1963-2011,A = B: 12-1 momentum,gross,FF5 + UMD,0.3791,2.4426,582
+In-sample 1963-2011,A = B: 12-1 momentum,gross,q-factor,0.4044,1.0163,540
+In-sample 1963-2011,A = B: 12-1 momentum,net,CAPM,0.4318,1.5981,582
+In-sample 1963-2011,A = B: 12-1 momentum,net,FF3,0.6337,2.427,582
+In-sample 1963-2011,A = B: 12-1 momentum,net,Carhart,-0.6617,-4.3004,582
+In-sample 1963-2011,A = B: 12-1 momentum,net,FF5,0.3752,1.0147,582
+In-sample 1963-2011,A = B: 12-1 momentum,net,FF5 + UMD,-0.6934,-4.4915,582
+In-sample 1963-2011,A = B: 12-1 momentum,net,q-factor,-0.622,-1.5618,540
+In-sample 1963-2011,A + buffer (reference),gross,CAPM,1.2741,5.0567,582
+In-sample 1963-2011,A + buffer (reference),gross,FF3,1.4404,5.8953,582
+In-sample 1963-2011,A + buffer (reference),gross,Carhart,0.2236,2.2819,582
+In-sample 1963-2011,A + buffer (reference),gross,FF5,1.1993,3.5397,582
+In-sample 1963-2011,A + buffer (reference),gross,FF5 + UMD,0.1947,1.9096,582
+In-sample 1963-2011,A + buffer (reference),gross,q-factor,0.2394,0.6656,540
+In-sample 1963-2011,A + buffer (reference),net,CAPM,0.7469,2.9481,582
+In-sample 1963-2011,A + buffer (reference),net,FF3,0.9121,3.7265,582
+In-sample 1963-2011,A + buffer (reference),net,Carhart,-0.3058,-3.1335,582
+In-sample 1963-2011,A + buffer (reference),net,FF5,0.6724,1.9854,582
+In-sample 1963-2011,A + buffer (reference),net,FF5 + UMD,-0.3333,-3.2821,582
+In-sample 1963-2011,A + buffer (reference),net,q-factor,-0.2749,-0.763,540
+In-sample 1963-2011,C: + swap rule,gross,CAPM,1.3884,5.8654,582
+In-sample 1963-2011,C: + swap rule,gross,FF3,1.5544,6.5281,582
+In-sample 1963-2011,C: + swap rule,gross,Carhart,0.4943,3.1858,582
+In-sample 1963-2011,C: + swap rule,gross,FF5,1.4332,4.4343,582
+In-sample 1963-2011,C: + swap rule,gross,FF5 + UMD,0.5497,3.5636,582
+In-sample 1963-2011,C: + swap rule,gross,q-factor,0.6206,1.8302,540
+In-sample 1963-2011,C: + swap rule,net,CAPM,0.3851,1.646,582
+In-sample 1963-2011,C: + swap rule,net,FF3,0.5493,2.3337,582
+In-sample 1963-2011,C: + swap rule,net,Carhart,-0.5036,-3.2195,582
+In-sample 1963-2011,C: + swap rule,net,FF5,0.4179,1.3033,582
+In-sample 1963-2011,C: + swap rule,net,FF5 + UMD,-0.4583,-2.9306,582
+In-sample 1963-2011,C: + swap rule,net,q-factor,-0.3453,-1.0257,540
+In-sample 1963-2011,D: + swap rule + buffer (final),gross,CAPM,1.2005,5.5665,582
+In-sample 1963-2011,D: + swap rule + buffer (final),gross,FF3,1.3425,6.1754,582
+In-sample 1963-2011,D: + swap rule + buffer (final),gross,Carhart,0.3481,3.1313,582
+In-sample 1963-2011,D: + swap rule + buffer (final),gross,FF5,1.218,4.2032,582
+In-sample 1963-2011,D: + swap rule + buffer (final),gross,FF5 + UMD,0.3898,3.4206,582
+In-sample 1963-2011,D: + swap rule + buffer (final),gross,q-factor,0.4669,1.5603,540
+In-sample 1963-2011,D: + swap rule + buffer (final),net,CAPM,0.6848,3.1905,582
+In-sample 1963-2011,D: + swap rule + buffer (final),net,FF3,0.8246,3.8269,582
+In-sample 1963-2011,D: + swap rule + buffer (final),net,Carhart,-0.1661,-1.5138,582
+In-sample 1963-2011,D: + swap rule + buffer (final),net,FF5,0.6987,2.429,582
+In-sample 1963-2011,D: + swap rule + buffer (final),net,FF5 + UMD,-0.1261,-1.1146,582
+In-sample 1963-2011,D: + swap rule + buffer (final),net,q-factor,-0.037,-0.1243,540
+In-sample 1963-2011,E: permanent swap (competitor),gross,CAPM,0.8553,4.8906,582
+In-sample 1963-2011,E: permanent swap (competitor),gross,FF3,0.9723,5.807,582
+In-sample 1963-2011,E: permanent swap (competitor),gross,Carhart,0.1291,1.846,582
+In-sample 1963-2011,E: permanent swap (competitor),gross,FF5,0.8515,3.7153,582
+In-sample 1963-2011,E: permanent swap (competitor),gross,FF5 + UMD,0.151,2.0038,582
+In-sample 1963-2011,E: permanent swap (competitor),gross,q-factor,0.2129,0.8726,540
+In-sample 1963-2011,E: permanent swap (competitor),net,CAPM,0.5015,2.8512,582
+In-sample 1963-2011,E: permanent swap (competitor),net,FF3,0.6183,3.6706,582
+In-sample 1963-2011,E: permanent swap (competitor),net,Carhart,-0.2255,-3.2345,582
+In-sample 1963-2011,E: permanent swap (competitor),net,FF5,0.499,2.1663,582
+In-sample 1963-2011,E: permanent swap (competitor),net,FF5 + UMD,-0.2021,-2.691,582
+In-sample 1963-2011,E: permanent swap (competitor),net,q-factor,-0.133,-0.5413,540
+Out-of-sample 2012-2025,A = B: 12-1 momentum,gross,CAPM,1.1151,2.4081,168
+Out-of-sample 2012-2025,A = B: 12-1 momentum,gross,FF3,0.7893,1.693,168
+Out-of-sample 2012-2025,A = B: 12-1 momentum,gross,Carhart,0.1163,0.4542,168
+Out-of-sample 2012-2025,A = B: 12-1 momentum,gross,FF5,0.7621,1.6023,168
+Out-of-sample 2012-2025,A = B: 12-1 momentum,gross,FF5 + UMD,0.0995,0.3903,168
+Out-of-sample 2012-2025,A = B: 12-1 momentum,gross,q-factor,0.427,0.9969,168
+Out-of-sample 2012-2025,A = B: 12-1 momentum,net,CAPM,0.318,0.6995,168
+Out-of-sample 2012-2025,A = B: 12-1 momentum,net,FF3,-0.0059,-0.0127,168
+Out-of-sample 2012-2025,A = B: 12-1 momentum,net,Carhart,-0.682,-2.7415,168
+Out-of-sample 2012-2025,A = B: 12-1 momentum,net,FF5,-0.0337,-0.0709,168
+Out-of-sample 2012-2025,A = B: 12-1 momentum,net,FF5 + UMD,-0.6997,-2.8214,168
+Out-of-sample 2012-2025,A = B: 12-1 momentum,net,q-factor,-0.3679,-0.8586,168
+Out-of-sample 2012-2025,A + buffer (reference),gross,CAPM,0.8054,1.6176,168
+Out-of-sample 2012-2025,A + buffer (reference),gross,FF3,0.4806,1.0255,168
+Out-of-sample 2012-2025,A + buffer (reference),gross,Carhart,-0.2106,-0.7037,168
+Out-of-sample 2012-2025,A + buffer (reference),gross,FF5,0.4438,0.9456,168
+Out-of-sample 2012-2025,A + buffer (reference),gross,FF5 + UMD,-0.2202,-0.7611,168
+Out-of-sample 2012-2025,A + buffer (reference),gross,q-factor,0.116,0.2533,168
+Out-of-sample 2012-2025,A + buffer (reference),net,CAPM,0.3883,0.7747,168
+Out-of-sample 2012-2025,A + buffer (reference),net,FF3,0.0666,0.1415,168
+Out-of-sample 2012-2025,A + buffer (reference),net,Carhart,-0.625,-2.0661,168
+Out-of-sample 2012-2025,A + buffer (reference),net,FF5,0.0296,0.0629,168
+Out-of-sample 2012-2025,A + buffer (reference),net,FF5 + UMD,-0.6349,-2.1711,168
+Out-of-sample 2012-2025,A + buffer (reference),net,q-factor,-0.2974,-0.6453,168
+Out-of-sample 2012-2025,C: + swap rule,gross,CAPM,1.115,2.3934,168
+Out-of-sample 2012-2025,C: + swap rule,gross,FF3,0.8498,1.8858,168
+Out-of-sample 2012-2025,C: + swap rule,gross,Carhart,0.2215,0.8348,168
+Out-of-sample 2012-2025,C: + swap rule,gross,FF5,0.8249,1.8008,168
+Out-of-sample 2012-2025,C: + swap rule,gross,FF5 + UMD,0.2057,0.771,168
+Out-of-sample 2012-2025,C: + swap rule,gross,q-factor,0.5027,1.1855,168
+Out-of-sample 2012-2025,C: + swap rule,net,CAPM,0.3378,0.739,168
+Out-of-sample 2012-2025,C: + swap rule,net,FF3,0.0739,0.1653,168
+Out-of-sample 2012-2025,C: + swap rule,net,Carhart,-0.5573,-2.1632,168
+Out-of-sample 2012-2025,C: + swap rule,net,FF5,0.0487,0.107,168
+Out-of-sample 2012-2025,C: + swap rule,net,FF5 + UMD,-0.5738,-2.2144,168
+Out-of-sample 2012-2025,C: + swap rule,net,q-factor,-0.273,-0.6504,168
+Out-of-sample 2012-2025,D: + swap rule + buffer (final),gross,CAPM,0.8698,1.8046,168
+Out-of-sample 2012-2025,D: + swap rule + buffer (final),gross,FF3,0.6,1.4278,168
+Out-of-sample 2012-2025,D: + swap rule + buffer (final),gross,Carhart,-0.0349,-0.133,168
+Out-of-sample 2012-2025,D: + swap rule + buffer (final),gross,FF5,0.5664,1.3422,168
+Out-of-sample 2012-2025,D: + swap rule + buffer (final),gross,FF5 + UMD,-0.0445,-0.1734,168
+Out-of-sample 2012-2025,D: + swap rule + buffer (final),gross,q-factor,0.2399,0.5625,168
+Out-of-sample 2012-2025,D: + swap rule + buffer (final),net,CAPM,0.4562,0.9413,168
+Out-of-sample 2012-2025,D: + swap rule + buffer (final),net,FF3,0.1892,0.4491,168
+Out-of-sample 2012-2025,D: + swap rule + buffer (final),net,Carhart,-0.4475,-1.6928,168
+Out-of-sample 2012-2025,D: + swap rule + buffer (final),net,FF5,0.1554,0.3673,168
+Out-of-sample 2012-2025,D: + swap rule + buffer (final),net,FF5 + UMD,-0.4573,-1.7651,168
+Out-of-sample 2012-2025,D: + swap rule + buffer (final),net,q-factor,-0.1711,-0.4,168
+Out-of-sample 2012-2025,E: permanent swap (competitor),gross,CAPM,0.4398,1.3517,168
+Out-of-sample 2012-2025,E: permanent swap (competitor),gross,FF3,0.2823,1.0053,168
+Out-of-sample 2012-2025,E: permanent swap (competitor),gross,Carhart,-0.1729,-1.0051,168
+Out-of-sample 2012-2025,E: permanent swap (competitor),gross,FF5,0.2678,0.9274,168
+Out-of-sample 2012-2025,E: permanent swap (competitor),gross,FF5 + UMD,-0.1663,-0.9936,168
+Out-of-sample 2012-2025,E: permanent swap (competitor),gross,q-factor,0.1023,0.3484,168
+Out-of-sample 2012-2025,E: permanent swap (competitor),net,CAPM,0.1457,0.4432,168
+Out-of-sample 2012-2025,E: permanent swap (competitor),net,FF3,-0.0091,-0.0324,168
+Out-of-sample 2012-2025,E: permanent swap (competitor),net,Carhart,-0.465,-2.6683,168
+Out-of-sample 2012-2025,E: permanent swap (competitor),net,FF5,-0.0236,-0.0817,168
+Out-of-sample 2012-2025,E: permanent swap (competitor),net,FF5 + UMD,-0.4584,-2.711,168
+Out-of-sample 2012-2025,E: permanent swap (competitor),net,q-factor,-0.1885,-0.6384,168
